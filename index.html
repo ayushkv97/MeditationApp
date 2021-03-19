@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Meditation App</title>
+</head>
+<body>
+    <div class="app">
+        <div class="videoContainer">
+            <video loop>
+                <source src="./videos/rain.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <div class="timeSelect">
+            
+            <button data-time="120">2 Minutes</button>
+            <button data-time="300">5 Minutes</button>
+            <button data-time="600">10 Minutes</button>
+        </div>
+        <div class="player">
+            <audio class="song">
+                <source src="./sounds/rain.mp3" type="">
+            </audio>
+            <img src="./svg/play-button.png" alt="Play"  class="play">
+            <h3 class="timeDisplay">00:00</h3>
+        </div>
+        
+        <div class="musicSelect">
+            <button data-sound="./sounds/rain.mp3" data-video="./videos/rain.mp4"><img src="./svg/rain.png" alt="rain"></button>
+            <button data-sound="./sounds/beach.mp3" data-video="./videos/beach.mp4"><img src="./svg/sun.png" alt="beach"></button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
